@@ -23,7 +23,7 @@ public class AppConfig {
     public OrderService orderService(){
         return new OrderServiceImpl(memberRepository(), discountPolicy());
     }
-    @Bean
+    //@Bean
     public MemberRepository memberRepository(){
         return new MemoryMemberRepository();
     }
